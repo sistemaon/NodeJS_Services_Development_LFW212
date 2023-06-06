@@ -18,3 +18,7 @@ npm -v
 ### Creating a Web Server
 
 ##### Node Core Server: [Node Core Server](./node_core_server.js)
+
+---
+## References and Helpers
+[HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
