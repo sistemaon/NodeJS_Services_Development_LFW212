@@ -17,7 +17,7 @@ npm -v
 
 ## Creating a Web Server
 
-##### Node HTTP Core Server: [Node HTTP Core Server](./creating_web_server/node_http_core/node_http_core_server.js)
+##### Node HTTP Core Server: [Node HTTP Core Server](./creating_web_server/node_http_core)
 
 ##### Node Express Server: [Node Express Server](./creating_web_server/express)
 
