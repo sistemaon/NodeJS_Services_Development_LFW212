@@ -12,6 +12,7 @@ node -v
 ```
 npm -v
 ```
+
 ---
 
 ## Creating a Web Server
@@ -21,6 +22,22 @@ npm -v
 ##### Node Express Server: [Node Express Server](./creating_web_server/express)
 
 ##### Node Fastify Server: [Node Fastify Server](./creating_web_server/fastify)
+
+---
+
+## Labs
+
+### Lab 3.1 Deliver Data from a Library API
+
+#### Node HTTP
+[Node HTTP](./labs/lab_3_1_deliver_data_from_library_api/node_http/)
+
+#### Node Express
+[Node Express](./labs/lab_3_1_deliver_data_from_library_api/node_express/)
+
+#### Node Fastify
+[Node Fastify](./labs/lab_3_1_deliver_data_from_library_api/node_fastify/)
+
 ---
 
 ## References and Helpers
