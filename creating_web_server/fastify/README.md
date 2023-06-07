@@ -1,3 +1,14 @@
+# NodeJS_Services_Development_LFW212
+
+## Creating a Web Server
+
+### Node Fastify Server
+
+#### Install:
+```
+npm install
+```
+
 # Getting Started with [Fastify-CLI](https://www.npmjs.com/package/fastify-cli)
 This project was bootstrapped with Fastify-CLI.
 
