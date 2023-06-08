@@ -25,6 +25,12 @@ npm -v
 
 ---
 
+## Serving Web Content
+
+##### Serving Static Content with Fastify: [Static Content Fastify](./serving_web_content/fastify)
+
+---
+
 ## Labs
 
 ### Lab 3.1 Deliver Data from a Library API
