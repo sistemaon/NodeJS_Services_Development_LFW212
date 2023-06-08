@@ -43,7 +43,9 @@ npm -v
 
 ## Streaming Content
 
-##### Streaming Content with Fastify: [Templates Fastify](./streaming_content/fastify/)
+##### Streaming Content with Express: [Streaming Content Express](./streaming_content/express/)
+
+##### Streaming Content with Fastify: [Streaming Content Fastify](./streaming_content/fastify/)
 
 ---
 
@@ -74,6 +76,8 @@ npm -v
 [Point of View](https://github.com/fastify/point-of-view)
 
 [Transfer Encoding](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Transfer-Encoding)
+
+[Readable Stream](https://www.npmjs.com/package/readable-stream)
 
 ---
 ---
