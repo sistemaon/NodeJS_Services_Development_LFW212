@@ -62,6 +62,11 @@ npm -v
 #### Node Fastify
 [Node Fastify](./labs/lab_3_1_deliver_data_from_library_api/node_fastify/)
 
+### Lab 4.1 Render a View
+
+#### Node Express
+[Node Express](./labs/lab_4_1_render_a_view/express/)
+
 ---
 
 ## References and Helpers
