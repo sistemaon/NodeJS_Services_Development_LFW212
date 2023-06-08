@@ -75,6 +75,9 @@ npm -v
 #### Node Express
 [Node Express](./labs/lab_4_2_stream_some_content/express/)
 
+#### Node Fastify
+[Node Fastify](./labs/lab_4_2_stream_some_content/fastify/)
+
 ---
 
 ## References and Helpers
