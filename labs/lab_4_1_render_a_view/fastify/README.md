@@ -14,6 +14,11 @@ npm install
 npm run dev
 ```
 
+#### Validate:
+```
+node validate
+```
+
 # Getting Started with [Fastify-CLI](https://www.npmjs.com/package/fastify-cli)
 This project was bootstrapped with Fastify-CLI.
 
