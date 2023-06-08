@@ -31,6 +31,12 @@ npm -v
 
 ---
 
+## Using Templates
+
+##### Using Templates with Fastify: [Templates Fastify](./using_templates/fastify)
+
+---
+
 ## Labs
 
 ### Lab 3.1 Deliver Data from a Library API
@@ -52,6 +58,10 @@ npm -v
 [Fastify request](https://www.fastify.io/docs/v3.27.x/Reference/Request/)
 
 [Fastify reply](https://www.fastify.io/docs/v3.27.x/Reference/Reply/)
+
+[Cross Site Scripting XSS](https://owasp.org/www-community/attacks/xss/)
+
+[Point of View](https://github.com/fastify/point-of-view)
 
 ---
 ---
