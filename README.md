@@ -41,6 +41,12 @@ npm -v
 
 ---
 
+## Streaming Content
+
+##### Streaming Content with Fastify: [Templates Fastify](./streaming_content/fastify/)
+
+---
+
 ## Labs
 
 ### Lab 3.1 Deliver Data from a Library API
@@ -66,6 +72,8 @@ npm -v
 [Cross Site Scripting XSS](https://owasp.org/www-community/attacks/xss/)
 
 [Point of View](https://github.com/fastify/point-of-view)
+
+[Transfer Encoding](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Transfer-Encoding)
 
 ---
 ---
