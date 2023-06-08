@@ -10,7 +10,6 @@ npm install
 ```
 
 #### Run Dev:
-Run dev to serve web content static.
 ```
 npm run dev
 ```
