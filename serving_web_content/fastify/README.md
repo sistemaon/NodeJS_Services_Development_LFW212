@@ -1,6 +1,6 @@
 # NodeJS_Services_Development_LFW212
 
-## Creating a Web Server
+## Serving Web Content
 
 ### Node Fastify Server
 

@@ -27,11 +27,15 @@ npm -v
 
 ## Serving Web Content
 
+##### Serving Static Content with Express: [Static Content Express](./serving_web_content/express)
+
 ##### Serving Static Content with Fastify: [Static Content Fastify](./serving_web_content/fastify)
 
 ---
 
 ## Using Templates
+
+##### Using Templates with Express: [Templates Express](./using_templates/express)
 
 ##### Using Templates with Fastify: [Templates Fastify](./using_templates/fastify)
 
