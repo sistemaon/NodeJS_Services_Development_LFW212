@@ -97,6 +97,11 @@ npm -v
 #### Node Fastify
 [Node Fastify](./labs/lab_4_2_stream_some_content/fastify/)
 
+### Lab 5.1 Implement a RESTful JSON
+
+#### Node Express
+[Node Express](./labs/lab_5_1_implement_a_restful_json/express/)
+
 ---
 
 ## References and Helpers
