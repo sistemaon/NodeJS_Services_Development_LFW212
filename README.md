@@ -62,6 +62,17 @@ npm -v
 #### Node Fastify
 [Node Fastify](./labs/lab_3_1_deliver_data_from_library_api/node_fastify/)
 
+### Lab 3.2 Implement a Status Code Response
+
+#### Node HTTP
+[Node HTTP](./labs/lab_3_2_implement_a_status_code_response/node_http/)
+
+#### Node Express
+[Node Express](./labs/lab_3_2_implement_a_status_code_response/node_express/)
+
+#### Node Fastify
+[Node Fastify](./labs/lab_3_2_implement_a_status_code_response/node_fastify/)
+
 ### Lab 4.1 Render a View
 
 #### Node Express
