@@ -1,0 +1,16 @@
+const express = require('express');
+const router = express.Router();
+const model = require('../model');
+
+router.get('/:id', function (req, res, next) {
+    model.boat.read(req.params.id, (err, result) => {
+        if (err) {
+            if (err.message === 'not found') next();
+            else next(err);
+        } else {
+            res.json(result);
+        }
+    });
+});
+
+module.exports = router;
