@@ -51,6 +51,8 @@ npm -v
 
 ## Implementing a RESTful JSON
 
+##### RESTful JSON with Express: [RESTful JSON Express](./implementing_a_restful_json/express/)
+
 ##### RESTful JSON with Fastify: [RESTful JSON Fastify](./implementing_a_restful_json/fastify/)
 
 ---
