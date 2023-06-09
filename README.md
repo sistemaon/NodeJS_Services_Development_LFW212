@@ -49,6 +49,12 @@ npm -v
 
 ---
 
+## Implementing a RESTful JSON
+
+##### RESTful JSON with Fastify: [RESTful JSON Fastify](./implementing_a_restful_json/fastify/)
+
+---
+
 ## Labs
 
 ### Lab 3.1 Deliver Data from a Library API
@@ -105,6 +111,12 @@ npm -v
 [Transfer Encoding](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Transfer-Encoding)
 
 [Readable Stream](https://www.npmjs.com/package/readable-stream)
+
+[JSON Specification](https://www.json.org/json-en.html)
+
+[Architectural Styles and the Design of Network-based Software Architectures](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
+
+[Representational State Transfer](https://en.wikipedia.org/wiki/Representational_state_transfer)
 
 ---
 ---
