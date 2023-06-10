@@ -61,6 +61,8 @@ npm -v
 
 ##### POST PUT DELETE with Express: [POST PUT DELETE Express](./implementing_post_put_delete/express/)
 
+##### POST PUT DELETE with Fastify: [POST PUT DELETE Fastify](./implementing_post_put_delete/fastify/)
+
 ---
 
 ## Labs
