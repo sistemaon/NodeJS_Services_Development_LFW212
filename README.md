@@ -57,6 +57,12 @@ npm -v
 
 ---
 
+## Implementing POST PUT DELETE
+
+##### POST PUT DELETE with Express: [POST PUT DELETE Express](./implementing_post_put_delete/express/)
+
+---
+
 ## Labs
 
 ### Lab 3.1 Deliver Data from a Library API
