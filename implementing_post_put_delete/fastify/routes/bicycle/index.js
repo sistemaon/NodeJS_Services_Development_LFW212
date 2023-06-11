@@ -1,63 +1,41 @@
 'use strict'
+const { promisify } = require('util')
+const { bicycle } = require('../../model')
+const { uid } = bicycle
+const read = promisify(bicycle.read)
+const create = promisify(bicycle.create)
+const update = promisify(bicycle.update)
 
-module.exports = {
-  bicycle: bicycleModel()
-}
+module.exports = async (fastify, opts) => {
+  const { notFound } = fastify.httpErrors
 
-function bicycleModel () {
-  const db = {
-    1: { brand: 'Veloretti', color: 'green' },
-    2: { brand: 'Batavus', color: 'yellow' }
-  }
+  fastify.post('/', async (request, reply) => {
+    const { data } = request.body
+    const id = uid()
+    await create(id, data)
+    reply.code(201)
+    return { id }
+  })
 
-  return {
-    create, read, update, del, uid
-  }
-
-  function uid () {
-    return Object.keys(db)
-      .sort((a, b) => a - b)
-      .map(Number)
-      .filter((n) => !isNaN(n))
-      .pop() + 1 + ''
-  }
-
-  function create (id, data, cb) {
-    if (db.hasOwnProperty(id)) {
-      const err = Error('resource exists')
-      setImmediate(() => cb(err))
-      return
+  fastify.post('/:id/update', async (request, reply) => {
+    const { id } = request.params
+    const { data } = request.body
+    try {
+      await update(id, data)
+      reply.code(204)
+    } catch (err) {
+      if (err.message === 'not found') throw notFound()
+      throw err
     }
-    db[id] = data
-    setImmediate(() => cb(null, id))
-  }
+  })
 
-  function read (id, cb) {
-    if (!(db.hasOwnProperty(id))) {
-      const err = Error('not found')
-      setImmediate(() => cb(err))
-      return
+  fastify.get('/:id', async (request, reply) => {
+    const { id } = request.params
+    try {
+      return await read(id)
+    } catch (err) {
+      if (err.message === 'not found') throw notFound()
+      throw err
     }
-    setImmediate(() => cb(null, db[id]))
-  }
-
-  function update (id, data, cb) {
-    if (!(db.hasOwnProperty(id))) {
-      const err = Error('not found')
-      setImmediate(() => cb(err))
-      return
-    }
-    db[id] = data
-    setImmediate(() => cb())
-  }
-
-  function del (id, cb) {
-    if (!(db.hasOwnProperty(id))) {
-      const err = Error('not found')
-      setImmediate(() => cb(err))
-      return
-    }
-    delete db[id]
-    setImmediate(() => cb())
-  }
+  })
 }
