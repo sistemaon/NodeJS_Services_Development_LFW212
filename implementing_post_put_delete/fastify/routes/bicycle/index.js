@@ -38,4 +38,33 @@ module.exports = async (fastify, opts) => {
       throw err
     }
   })
+
+  fastify.put('/:id', async (request, reply) => {
+    const { id } = request.params
+    const { data } = request.body
+    try {
+      await create(id, data)
+      reply.code(201)
+      return {}
+    } catch (err) {
+      if (err.message === 'resource exists') {
+        await update(id, data)
+        reply.code(204)
+      } else {
+        throw err
+      }
+    }
+  })
+
+  fastify.delete('/:id', async (request, reply) => {
+    const { id } = request.params
+    try {
+      await del(id)
+      reply.code(204)
+    } catch (err) {
+      if (err.message === 'not found') throw notFound()
+      throw err
+    }
+  })
+
 }
