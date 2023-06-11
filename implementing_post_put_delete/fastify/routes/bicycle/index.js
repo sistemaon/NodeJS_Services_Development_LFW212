@@ -5,6 +5,7 @@ const { uid } = bicycle
 const read = promisify(bicycle.read)
 const create = promisify(bicycle.create)
 const update = promisify(bicycle.update)
+const del = promisify(bicycle.del)
 
 module.exports = async (fastify, opts) => {
   const { notFound } = fastify.httpErrors
