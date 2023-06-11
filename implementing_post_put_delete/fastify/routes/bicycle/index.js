@@ -1,18 +1,63 @@
 'use strict'
 
-const { promisify } = require('util')
-const { bicycle } = require('../../model')
-const read = promisify(bicycle.read)
+module.exports = {
+  bicycle: bicycleModel()
+}
 
-module.exports = async (fastify, opts) => {
-  const { notFound } = fastify.httpErrors
-  fastify.get('/:id', async (request, reply) => {
-    const { id } = request.params
-    try {
-      return await read(id)
-    } catch (err) {
-      if (err.message === 'not found') throw notFound()
-      throw err
+function bicycleModel () {
+  const db = {
+    1: { brand: 'Veloretti', color: 'green' },
+    2: { brand: 'Batavus', color: 'yellow' }
+  }
+
+  return {
+    create, read, update, del, uid
+  }
+
+  function uid () {
+    return Object.keys(db)
+      .sort((a, b) => a - b)
+      .map(Number)
+      .filter((n) => !isNaN(n))
+      .pop() + 1 + ''
+  }
+
+  function create (id, data, cb) {
+    if (db.hasOwnProperty(id)) {
+      const err = Error('resource exists')
+      setImmediate(() => cb(err))
+      return
     }
-  })
+    db[id] = data
+    setImmediate(() => cb(null, id))
+  }
+
+  function read (id, cb) {
+    if (!(db.hasOwnProperty(id))) {
+      const err = Error('not found')
+      setImmediate(() => cb(err))
+      return
+    }
+    setImmediate(() => cb(null, db[id]))
+  }
+
+  function update (id, data, cb) {
+    if (!(db.hasOwnProperty(id))) {
+      const err = Error('not found')
+      setImmediate(() => cb(err))
+      return
+    }
+    db[id] = data
+    setImmediate(() => cb())
+  }
+
+  function del (id, cb) {
+    if (!(db.hasOwnProperty(id))) {
+      const err = Error('not found')
+      setImmediate(() => cb(err))
+      return
+    }
+    delete db[id]
+    setImmediate(() => cb())
+  }
 }
