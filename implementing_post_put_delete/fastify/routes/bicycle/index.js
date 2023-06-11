@@ -2,8 +2,8 @@
 const { promisify } = require('util')
 const { bicycle } = require('../../model')
 const { uid } = bicycle
-const read = promisify(bicycle.read)
 const create = promisify(bicycle.create)
+const read = promisify(bicycle.read)
 const update = promisify(bicycle.update)
 const del = promisify(bicycle.del)
 
