@@ -13,4 +13,14 @@ router.get('/:id', function (req, res, next) {
     });
 });
 
+router.post('/', function (req, res, next) {
+    const id = model.boat.uid();
+    model.boat.create(id, req.body.data, (err, result) => {
+        if (err) next(err);
+        else {
+            res.status(201).json({ id: result });
+        }
+    });
+});
+
 module.exports = router;
