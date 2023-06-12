@@ -126,6 +126,8 @@ npm -v
 #### Node Express
 [Node Express](./labs/lab_6_2_implement_a_restful_json_delete/express/)
 
+#### Node Fastify
+[Node Express](./labs/lab_6_2_implement_a_restful_json_delete/fastify/)
 
 ---
 
