@@ -152,5 +152,17 @@ npm -v
 
 [Representational State Transfer](https://en.wikipedia.org/wiki/Representational_state_transfer)
 
+[Representational State Transfer](https://developer.mozilla.org/en-US/docs/Glossary/REST)
+
+[HTTP Request Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
+
+[Application Programming Interface](https://developer.mozilla.org/en-US/docs/Glossary/API)
+
+[Simple Object Access Protocol](https://en.wikipedia.org/wiki/SOAP)
+
+[Simple Object Access Protocol](https://developer.mozilla.org/en-US/docs/Glossary/SOAP)
+
+[Remote Procedure Call](https://en.wikipedia.org/wiki/Remote_procedure_call)
+
 ---
 ---
