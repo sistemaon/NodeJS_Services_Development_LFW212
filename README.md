@@ -121,6 +121,12 @@ npm -v
 #### Node Fastify
 [Node Fastify](./labs/lab_6_1_implement_a_restful_json_post/fastify/)
 
+### Lab 6.2 Implement a RESTful JSON DELETE
+
+#### Node Express
+[Node Express](./labs/lab_6_2_implement_a_restful_json_delete/express/)
+
+
 ---
 
 ## References and Helpers
