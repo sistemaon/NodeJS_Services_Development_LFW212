@@ -118,6 +118,9 @@ npm -v
 #### Node Express
 [Node Express](./labs/lab_6_1_implement_a_restful_json_post/express/)
 
+#### Node Fastify
+[Node Fastify](./labs/lab_6_1_implement_a_restful_json_post/fastify/)
+
 ---
 
 ## References and Helpers
