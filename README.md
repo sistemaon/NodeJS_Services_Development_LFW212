@@ -69,6 +69,8 @@ npm -v
 
 ##### Node HTTP Core Server Services: [Node HTTP Core Server Services](./consuming_and_aggregating_services/node_http_core/)
 
+##### Node Fastify Server: [Node Fastify Server](./consuming_and_aggregating_services/fastify/)
+
 ---
 
 ## Labs
@@ -169,6 +171,18 @@ npm -v
 [Simple Object Access Protocol](https://developer.mozilla.org/en-US/docs/Glossary/SOAP)
 
 [Remote Procedure Call](https://en.wikipedia.org/wiki/Remote_procedure_call)
+
+[GOT](https://github.com/sindresorhus/got)
+
+[Reflected Attack](https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/07-Input_Validation_Testing/01-Testing_for_Reflected_Cross_Site_Scripting)
+
+[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+
+[Promise All](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
+
+[Destructuring Assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+
+[Fastify Reply Redirect](https://www.fastify.io/docs/latest/Reference/Reply/#redirectcode)
 
 ---
 ---
