@@ -137,7 +137,12 @@ npm -v
 [Node Express](./labs/lab_6_2_implement_a_restful_json_delete/express/)
 
 #### Node Fastify
-[Node Express](./labs/lab_6_2_implement_a_restful_json_delete/fastify/)
+[Node Fastify](./labs/lab_6_2_implement_a_restful_json_delete/fastify/)
+
+### Lab 7.1 Implement a Data Aggregating Service
+
+#### Node HTTP Core Services
+[Node HTTP Core Services](./labs/lab_7_1_implement_a_data_aggregating_service/node_http_core/)
 
 ---
 
@@ -191,6 +196,7 @@ npm -v
 [Express Response](https://expressjs.com/en/4x/api.html#res)
 
 [Express Error Handling](https://expressjs.com/en/guide/error-handling.html)
+
 
 ---
 ---
