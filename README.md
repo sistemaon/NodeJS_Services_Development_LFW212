@@ -186,5 +186,11 @@ npm -v
 
 [Fastify Reply Redirect](https://www.fastify.io/docs/latest/Reference/Reply/#redirectcode)
 
+[Express Request](https://expressjs.com/en/4x/api.html#req)
+
+[Express Response](https://expressjs.com/en/4x/api.html#res)
+
+[Express Error Handling](https://expressjs.com/en/guide/error-handling.html)
+
 ---
 ---
