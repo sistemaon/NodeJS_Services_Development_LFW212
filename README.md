@@ -197,6 +197,15 @@ npm -v
 
 [Express Error Handling](https://expressjs.com/en/guide/error-handling.html)
 
+[Node HTTP](https://nodejs.org/api/http.html)
+
+[Node HTTP GET](https://nodejs.org/api/http.html#httpgeturl-options-callback)
+
+[Set Timeout](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)
+
+[Clear Timeout](https://developer.mozilla.org/en-US/docs/Web/API/clearTimeout)
+
+[Request Destroy](https://nodejs.org/api/http.html#requestdestroyerror)
 
 ---
 ---
