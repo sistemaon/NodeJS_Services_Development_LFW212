@@ -65,6 +65,12 @@ npm -v
 
 ---
 
+## Consuming and Aggregating Services
+
+##### Node HTTP Core Server Services: [Node HTTP Core Server Services](./consuming_and_aggregating_services/node_http_core/)
+
+---
+
 ## Labs
 
 ### Lab 3.1 Deliver Data from a Library API
