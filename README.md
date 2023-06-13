@@ -147,6 +147,9 @@ npm -v
 #### Node Express
 [Node Express](./labs/lab_7_1_implement_a_data_aggregating_service/express/)
 
+#### Node Fastify
+[Node Fastify](./labs/lab_7_1_implement_a_data_aggregating_service/fastify/)
+
 ---
 
 ## References and Helpers
