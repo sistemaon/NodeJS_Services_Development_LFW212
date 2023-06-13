@@ -69,6 +69,8 @@ npm -v
 
 ##### Node HTTP Core Server Services: [Node HTTP Core Server Services](./consuming_and_aggregating_services/node_http_core/)
 
+##### Node Express Server: [Node Express Server](./consuming_and_aggregating_services/express/)
+
 ##### Node Fastify Server: [Node Fastify Server](./consuming_and_aggregating_services/fastify/)
 
 ---
