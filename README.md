@@ -144,6 +144,9 @@ npm -v
 #### Node HTTP Core Services
 [Node HTTP Core Services](./labs/lab_7_1_implement_a_data_aggregating_service/node_http_core/)
 
+#### Node Express
+[Node Express](./labs/lab_7_1_implement_a_data_aggregating_service/express/)
+
 ---
 
 ## References and Helpers
