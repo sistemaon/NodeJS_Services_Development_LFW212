@@ -75,6 +75,12 @@ npm -v
 
 ---
 
+## Proxying HTTP Requests
+
+##### Node Fastify Server: [Node Fastify Server](./proxying_http_requests/fastify/)
+
+---
+
 ## Labs
 
 ### Lab 3.1 Deliver Data from a Library API
@@ -212,6 +218,16 @@ npm -v
 [Clear Timeout](https://developer.mozilla.org/en-US/docs/Web/API/clearTimeout)
 
 [Request Destroy](https://nodejs.org/api/http.html#requestdestroyerror)
+
+[Proxy Server](https://developer.mozilla.org/en-US/docs/Glossary/Proxy_server)
+
+[Proxy Server and Tunneling](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling)
+
+[Fastify Reply From](https://github.com/fastify/fastify-reply-from)
+
+[Iterating Over Async Generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of#iterating_over_async_generators)
+
+[For Await...Of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of)
 
 ---
 ---
