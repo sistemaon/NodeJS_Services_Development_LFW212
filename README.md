@@ -79,6 +79,8 @@ npm -v
 
 ##### Node Fastify Server: [Node Fastify Server](./proxying_http_requests/fastify/)
 
+##### Node Express Server: [Node Express Server](./proxying_http_requests/express/)
+
 ### Single-Origin Multi-Route Proxy
 
 ##### Node Fastify Server: [Node Fastify Server](./proxying_http_requests/single_origin_multi_route_proxy/fastify/)
@@ -236,6 +238,8 @@ npm -v
 [Fastify Plugin](https://github.com/fastify/fastify-plugin)
 
 [Fastify Sensible](https://github.com/fastify/fastify-sensible)
+
+[Express HTTP Proxy Middleware](https://github.com/chimurai/http-proxy-middleware)
 
 ---
 ---
