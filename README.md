@@ -77,11 +77,13 @@ npm -v
 
 ## Proxying HTTP Requests
 
-##### Node Fastify Server: [Node Fastify Server](./proxying_http_requests/fastify/)
-
 ##### Node Express Server: [Node Express Server](./proxying_http_requests/express/)
 
+##### Node Fastify Server: [Node Fastify Server](./proxying_http_requests/fastify/)
+
 ### Single-Origin Multi-Route Proxy
+
+##### Node Express Server: [Node Express Server](./proxying_http_requests/single_origin_multi_route_proxy/express/)
 
 ##### Node Fastify Server: [Node Fastify Server](./proxying_http_requests/single_origin_multi_route_proxy/fastify/)
 
