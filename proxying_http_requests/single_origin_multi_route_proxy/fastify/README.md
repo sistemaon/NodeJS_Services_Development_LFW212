@@ -15,6 +15,13 @@ npm install
 npm start
 ```
 
+- To authorize need to pass _?token=abc_ in the url.
+- Example:
+```
+http://localhost:3000/?token=abc
+http://localhost:3000/newest?token=abc
+```
+
 # Getting Started with [Fastify-CLI](https://www.npmjs.com/package/fastify-cli)
 This project was bootstrapped with Fastify-CLI.
 
