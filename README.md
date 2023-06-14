@@ -79,6 +79,10 @@ npm -v
 
 ##### Node Fastify Server: [Node Fastify Server](./proxying_http_requests/fastify/)
 
+### Single-Origin Multi-Route Proxy
+
+##### Node Fastify Server: [Node Fastify Server](./proxying_http_requests/single_origin_multi_route_proxy/fastify/)
+
 ---
 
 ## Labs
