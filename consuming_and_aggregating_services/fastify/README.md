@@ -12,6 +12,7 @@ npm install
 ```
 npm start
 ```
+
 _Obs: Need to have the **Bicycle and Brand** services running from node http core [Bicycle and Brand services](../node_http_core/)_.
 
 # Getting Started with [Fastify-CLI](https://www.npmjs.com/package/fastify-cli)

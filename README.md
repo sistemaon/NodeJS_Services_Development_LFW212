@@ -229,5 +229,9 @@ npm -v
 
 [For Await...Of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of)
 
+[Fastify Plugin](https://github.com/fastify/fastify-plugin)
+
+[Fastify Sensible](https://github.com/fastify/fastify-sensible)
+
 ---
 ---
