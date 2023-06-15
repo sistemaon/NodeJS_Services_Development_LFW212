@@ -20,7 +20,7 @@ npm start
 ```
 node -e "http.get('http://localhost:3000/todos/1', (res) =>res.pipe(process.stdout))"
 ```
-- The output of impelemnt's validation should be somehow something similar to this:
+- The output of implement's validation should be somehow something similar to this:
 ```json
 {
   "userId": 1,
