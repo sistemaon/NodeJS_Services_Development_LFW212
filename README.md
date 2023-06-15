@@ -177,6 +177,9 @@ npm -v
 #### Node Express
 [Node Express](./labs/lab_8_2_implement_a_full_proxying_service/express/)
 
+#### Node Fastify
+[Node Fastify](./labs/lab_8_2_implement_a_full_proxying_service/fastify/)
+
 ---
 
 ## References and Helpers
