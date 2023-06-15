@@ -164,6 +164,11 @@ npm -v
 #### Node Fastify
 [Node Fastify](./labs/lab_7_1_implement_a_data_aggregating_service/fastify/)
 
+### Lab 8.1 Implement an HTTP Route-Based Proxy
+
+#### Node Fastify
+[Node Fastify](./labs/lab_8_1_implement_an_http_route_based_proxy/fastify/)
+
 ---
 
 ## References and Helpers
@@ -242,6 +247,8 @@ npm -v
 [Fastify Sensible](https://github.com/fastify/fastify-sensible)
 
 [Express HTTP Proxy Middleware](https://github.com/chimurai/http-proxy-middleware)
+
+[Node Stream](https://nodejs.org/api/stream.html)
 
 ---
 ---
