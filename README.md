@@ -166,6 +166,9 @@ npm -v
 
 ### Lab 8.1 Implement an HTTP Route-Based Proxy
 
+#### Node Express
+[Node Express](./labs/lab_8_1_implement_an_http_route_based_proxy/express/)
+
 #### Node Fastify
 [Node Fastify](./labs/lab_8_1_implement_an_http_route_based_proxy/fastify/)
 
