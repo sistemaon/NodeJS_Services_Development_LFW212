@@ -172,6 +172,11 @@ npm -v
 #### Node Fastify
 [Node Fastify](./labs/lab_8_1_implement_an_http_route_based_proxy/fastify/)
 
+### Lab 8.2 Implement a Full Proxying Service
+
+#### Node Express
+[Node Express](./labs/lab_8_2_implement_a_full_proxying_service/express/)
+
 ---
 
 ## References and Helpers
