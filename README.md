@@ -189,11 +189,40 @@ npm -v
 ---
 
 ## References and Helpers
+
+[Express HTTP Proxy Middleware](https://github.com/chimurai/http-proxy-middleware)
+
+[Express Request](https://expressjs.com/en/4x/api.html#req)
+
+[Express Response](https://expressjs.com/en/4x/api.html#res)
+
+[Express Error Handling](https://expressjs.com/en/guide/error-handling.html)
+
+[Express Validator](https://express-validator.github.io/docs/)
+
 [HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 
 [Fastify request](https://www.fastify.io/docs/v3.27.x/Reference/Request/)
 
 [Fastify reply](https://www.fastify.io/docs/v3.27.x/Reference/Reply/)
+
+[Fastify Routes Options](https://www.fastify.io/docs/latest/Reference/Routes/#options)
+
+[Fastify Validator Compiler](https://www.fastify.io/docs/latest/Reference/Validation-and-Serialization/#validator-compiler)
+
+[Fastify Adding a Shared Schema](https://www.fastify.io/docs/latest/Reference/Validation-and-Serialization/#adding-a-shared-schema)
+
+[Fastify Fluent JSON Schema](https://github.com/fastify/fluent-json-schema)
+
+[Fastify Testing](https://www.fastify.io/docs/latest/Guides/Testing/)
+
+[Fastify Reply Redirect](https://www.fastify.io/docs/latest/Reference/Reply/#redirectcode)
+
+[Fastify Reply From](https://github.com/fastify/fastify-reply-from)
+
+[Fastify Plugin](https://github.com/fastify/fastify-plugin)
+
+[Fastify Sensible](https://github.com/fastify/fastify-sensible)
 
 [Cross Site Scripting XSS](https://owasp.org/www-community/attacks/xss/)
 
@@ -235,14 +264,6 @@ npm -v
 
 [Destructuring Assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
-[Fastify Reply Redirect](https://www.fastify.io/docs/latest/Reference/Reply/#redirectcode)
-
-[Express Request](https://expressjs.com/en/4x/api.html#req)
-
-[Express Response](https://expressjs.com/en/4x/api.html#res)
-
-[Express Error Handling](https://expressjs.com/en/guide/error-handling.html)
-
 [Node HTTP](https://nodejs.org/api/http.html)
 
 [Node HTTP GET](https://nodejs.org/api/http.html#httpgeturl-options-callback)
@@ -257,17 +278,9 @@ npm -v
 
 [Proxy Server and Tunneling](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling)
 
-[Fastify Reply From](https://github.com/fastify/fastify-reply-from)
-
 [Iterating Over Async Generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of#iterating_over_async_generators)
 
 [For Await...Of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of)
-
-[Fastify Plugin](https://github.com/fastify/fastify-plugin)
-
-[Fastify Sensible](https://github.com/fastify/fastify-sensible)
-
-[Express HTTP Proxy Middleware](https://github.com/chimurai/http-proxy-middleware)
 
 [Node Stream](https://nodejs.org/api/stream.html)
 
@@ -279,15 +292,7 @@ npm -v
 
 [URL Constructor](https://developer.mozilla.org/en-US/docs/Web/API/URL/URL)
 
-[Fastify Routes Options](https://www.fastify.io/docs/latest/Reference/Routes/#options)
-
-[Fastify Validator Compiler](https://www.fastify.io/docs/latest/Reference/Validation-and-Serialization/#validator-compiler)
-
-[Fastify Adding a Shared Schema](https://www.fastify.io/docs/latest/Reference/Validation-and-Serialization/#adding-a-shared-schema)
-
-[Fastify Fluent JSON Schema](https://github.com/fastify/fluent-json-schema)
-
-[Fastify Testing](https://www.fastify.io/docs/latest/Guides/Testing/)
+[Supertest](https://github.com/ladjs/supertest)
 
 ---
 ---
