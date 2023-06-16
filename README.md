@@ -191,6 +191,8 @@ npm -v
 
 [Cross Site Scripting XSS](https://owasp.org/www-community/attacks/xss/)
 
+[Cross Site Scripting XSS](https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting)
+
 [Point of View](https://github.com/fastify/point-of-view)
 
 [Transfer Encoding](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Transfer-Encoding)
@@ -198,6 +200,8 @@ npm -v
 [Readable Stream](https://www.npmjs.com/package/readable-stream)
 
 [JSON Specification](https://www.json.org/json-en.html)
+
+[JSON Schema](https://json-schema.org/)
 
 [Architectural Styles and the Design of Network-based Software Architectures](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
 
@@ -260,6 +264,24 @@ npm -v
 [Express HTTP Proxy Middleware](https://github.com/chimurai/http-proxy-middleware)
 
 [Node Stream](https://nodejs.org/api/stream.html)
+
+[SQL Injection](https://developer.mozilla.org/en-US/docs/Glossary/SQL_Injection)
+
+[Cross Site Request Forgery](https://developer.mozilla.org/en-US/docs/Glossary/CSRF)
+
+[URL Search](https://developer.mozilla.org/en-US/docs/Web/API/URL/search)
+
+[URL Constructor](https://developer.mozilla.org/en-US/docs/Web/API/URL/URL)
+
+[Fastify Routes Options](https://www.fastify.io/docs/latest/Reference/Routes/#options)
+
+[Fastify Validator Compiler](https://www.fastify.io/docs/latest/Reference/Validation-and-Serialization/#validator-compiler)
+
+[Fastify Adding a Shared Schema](https://www.fastify.io/docs/latest/Reference/Validation-and-Serialization/#adding-a-shared-schema)
+
+[Fastify Fluent JSON Schema](https://github.com/fastify/fluent-json-schema)
+
+[Fastify Testing](https://www.fastify.io/docs/latest/Guides/Testing/)
 
 ---
 ---
