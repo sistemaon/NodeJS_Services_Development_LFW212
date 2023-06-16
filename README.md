@@ -89,6 +89,12 @@ npm -v
 
 ---
 
+## Web Security Handling User Input
+
+##### Node Fastify Server: [Node Fastify Server](./web_security_handling_user_input/fastify/)
+
+---
+
 ## Labs
 
 ### Lab 3.1 Deliver Data from a Library API
