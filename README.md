@@ -193,6 +193,9 @@ npm -v
 #### Node Express
 [Node Express](./labs/lab_9_1_implement_a_service_that_is_not_vulnerable_to_parameter_pollution/express/)
 
+#### Node Fastify
+[Node Fastify](./labs/lab_9_1_implement_a_service_that_is_not_vulnerable_to_parameter_pollution/fastify/)
+
 ---
 
 ## References and Helpers
