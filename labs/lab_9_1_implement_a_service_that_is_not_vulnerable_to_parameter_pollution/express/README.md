@@ -16,7 +16,7 @@ npm install
 npm start
 ```
 
-#### Validate the Implementation
+#### Validate
 ```
 node validate
 ```

@@ -1,3 +1,26 @@
+# NodeJS_Services_Development_LFW212
+
+## Lab
+
+### Lab 9.1 - Implement a Service That Is Not Vulnerable to Parameter Pollution
+
+### Node Fastify Server
+
+#### Install:
+```
+npm install
+```
+
+#### Run:
+```
+npm start
+```
+
+#### Validate
+```
+node validate
+```
+
 # Getting Started with [Fastify-CLI](https://www.npmjs.com/package/fastify-cli)
 This project was bootstrapped with Fastify-CLI.
 
