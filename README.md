@@ -188,6 +188,11 @@ npm -v
 #### Node Fastify
 [Node Fastify](./labs/lab_8_2_implement_a_full_proxying_service/fastify/)
 
+### Lab 9.1 Implement a Service That Is Not Vulnerable to Parameter Pollution
+
+#### Node Express
+[Node Express](./labs/lab_9_1_implement_a_service_that_is_not_vulnerable_to_parameter_pollution/express/)
+
 ---
 
 ## References and Helpers
@@ -295,6 +300,12 @@ npm -v
 [URL Constructor](https://developer.mozilla.org/en-US/docs/Web/API/URL/URL)
 
 [Supertest](https://github.com/ladjs/supertest)
+
+[To String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toString)
+
+[Is Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)
+
+[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 ---
 ---
