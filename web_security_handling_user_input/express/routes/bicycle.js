@@ -15,7 +15,7 @@ const validateData = (o) => {
     brand: o.brand,
     color: o.color
   };
-}
+};
 
 const validateBody = (o) => {
   let valid = o !== null && typeof o === 'object';
@@ -25,26 +25,26 @@ const validateBody = (o) => {
   return valid && data && {
     data: data
   };
-}
+};
 
 const isIdValid = (n) => {
   n = Number(n);
   const MAX_SAFE = Math.pow(2, 53) - 1;
   return isFinite(n) && Math.floor(n) === n && Math.abs(n) <= MAX_SAFE;
-}
+};
 
 const isParamsValid = (o) => {
   let valid = o !== null && typeof o === 'object';
   valid = valid && hasOwnProperty(o, 'id');
   valid = valid && isIdValid(o.id);
   return valid;
-}
+};
 
 const badRequest = () => {
   const err = new Error('Bad Request');
   err.status = 400;
   return err;
-}
+};
 
 router.get('/:id', function (req, res, next) {
   if (isParamsValid(req.params)) {
