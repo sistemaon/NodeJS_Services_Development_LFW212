@@ -198,6 +198,9 @@ npm -v
 
 ### Lab 9.2 Validate a POST Request
 
+#### Node Express
+[Node Express](./labs/lab_9_2_validate_a_post_request/express/)
+
 #### Node Fastify
 [Node Fastify](./labs/lab_9_2_validate_a_post_request/fastify/)
 
