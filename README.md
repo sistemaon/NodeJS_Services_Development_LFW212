@@ -196,6 +196,11 @@ npm -v
 #### Node Fastify
 [Node Fastify](./labs/lab_9_1_implement_a_service_that_is_not_vulnerable_to_parameter_pollution/fastify/)
 
+### Lab 9.2 Validate a POST Request
+
+#### Node Fastify
+[Node Fastify](./labs/lab_9_2_validate_a_post_request/fastify/)
+
 ---
 
 ## References and Helpers
