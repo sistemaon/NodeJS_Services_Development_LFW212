@@ -318,5 +318,15 @@ npm -v
 
 [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
+[DoS Attack](https://developer.mozilla.org/en-US/docs/Glossary/DOS_attack)
+
+[DDoS Attack](https://developer.mozilla.org/en-US/docs/Glossary/Distributed_Denial_of_Service)
+
+[Node Socket Remote Address](https://nodejs.org/api/net.html#net_socket_remoteaddress)
+
+[Express Behind Proxies](https://expressjs.com/en/guide/behind-proxies.html#express-behind-proxies)
+
+
+
 ---
 ---
