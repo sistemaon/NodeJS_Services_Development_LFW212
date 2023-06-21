@@ -212,6 +212,18 @@ npm -v
 #### Node Fastify
 [Node Fastify](./labs/lab_9_2_validate_a_post_request/fastify/)
 
+### Lab 10 Block an Attackers IP Address
+
+##### Lab 10.1 Block an Attackers IP Address With Express
+
+#### Node Express
+[Node Express](./labs/lab_10_block_an_attackers_ip_address/lab_10_1_block_an_attackers_ip_address/express/)
+
+##### Lab 10.2 Block an Attackers IP Address With Fastify
+
+#### Node Fastify
+[Node Fastify](./labs/lab_10_block_an_attackers_ip_address/lab_10_2_block_an_attackers_ip_address/fastify/)
+
 ---
 
 ## References and Helpers
