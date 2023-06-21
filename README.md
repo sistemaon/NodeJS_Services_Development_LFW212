@@ -97,6 +97,14 @@ npm -v
 
 ---
 
+## Web Security Mitigating Attacks
+
+##### Node Express Server: [Node Express Server](./web_security_mitigating_attacks/express/)
+
+##### Node Fastify Server: [Node Fastify Server](./web_security_mitigating_attacks/fastify/)
+
+---
+
 ## Labs
 
 ### Lab 3.1 Deliver Data from a Library API
