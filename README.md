@@ -218,11 +218,11 @@ npm -v
 
 [Express Validator](https://express-validator.github.io/docs/)
 
-[HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+[HTTP Response Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 
-[Fastify request](https://www.fastify.io/docs/v3.27.x/Reference/Request/)
+[Fastify Request](https://www.fastify.io/docs/latest/Reference/Request/#request)
 
-[Fastify reply](https://www.fastify.io/docs/v3.27.x/Reference/Reply/)
+[Fastify Reply](https://www.fastify.io/docs/latest/Reference/Reply/#reply)
 
 [Fastify Routes Options](https://www.fastify.io/docs/latest/Reference/Routes/#options)
 
@@ -239,6 +239,8 @@ npm -v
 [Fastify Reply From](https://github.com/fastify/fastify-reply-from)
 
 [Fastify Plugin](https://github.com/fastify/fastify-plugin)
+
+[Fastify Plugins](https://www.fastify.io/docs/latest/Reference/Plugins/)
 
 [Fastify Sensible](https://github.com/fastify/fastify-sensible)
 
@@ -326,7 +328,11 @@ npm -v
 
 [Express Behind Proxies](https://expressjs.com/en/guide/behind-proxies.html#express-behind-proxies)
 
+[Fastify Trust Proxy](https://www.fastify.io/docs/latest/Reference/Server/#trustproxy)
 
+[Fastify Hooks](https://www.fastify.io/docs/latest/Reference/Hooks/)
+
+[Fastify Lifecycle](https://www.fastify.io/docs/latest/Reference/Lifecycle/)
 
 ---
 ---
