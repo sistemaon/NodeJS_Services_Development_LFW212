@@ -7,9 +7,9 @@
 
 > Preparatory for [OpenJS Node.js Services Developer Certification](https://training.linuxfoundation.org/certification/jsnsd/?_gl=1*1oqn94q*_ga*MjEwMDcxOTEzMy4xNjg2MDQ2ODA2*_ga_EMX7DDZMX4*MTY4NzQyNTA0My4xMjUuMS4xNjg3NDI2MDY5LjUzLjAuMA..) by [Linux Foundation](https://www.linuxfoundation.org/).
 
-[Linux Foundation Events](https://events.linuxfoundation.org/).
-[Linux Foundation Certification Catalog](https://training.linuxfoundation.org/certification-catalog/?_gl=1*krfpjr*_ga*MjEwMDcxOTEzMy4xNjg2MDQ2ODA2*_ga_EMX7DDZMX4*MTY4NzQyNTA0My4xMjUuMS4xNjg3NDI3ODc2LjE1LjAuMA..).
-[Linux Foundation Training](https://training.linuxfoundation.org/?_gl=1%2A11vbr5u%2A_ga%2AMjEwMDcxOTEzMy4xNjg2MDQ2ODA2%2A_ga_EMX7DDZMX4%2AMTY4NzQyNTA0My4xMjUuMS4xNjg3NDI3ODgyLjkuMC4w).
+[Linux Foundation Events](https://events.linuxfoundation.org/).\
+[Linux Foundation Certification Catalog](https://training.linuxfoundation.org/certification-catalog/?_gl=1*krfpjr*_ga*MjEwMDcxOTEzMy4xNjg2MDQ2ODA2*_ga_EMX7DDZMX4*MTY4NzQyNTA0My4xMjUuMS4xNjg3NDI3ODc2LjE1LjAuMA..).\
+[Linux Foundation Training](https://training.linuxfoundation.org/?_gl=1%2A11vbr5u%2A_ga%2AMjEwMDcxOTEzMy4xNjg2MDQ2ODA2%2A_ga_EMX7DDZMX4%2AMTY4NzQyNTA0My4xMjUuMS4xNjg3NDI3ODgyLjkuMC4w).\
 [Open JS Foundation](https://openjsf.org/).
 
 ---
