@@ -10,6 +10,7 @@ const helloRouter = require('./routes/hello');
 const articleRouter = require('./routes/article');
 const bicycleRouter = require('./routes/bicycle');
 const mockRouter = require('./routes/mock');
+const proxyRouter = require('./routes/proxy');
 
 const app = express();
 
@@ -23,6 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(proxyRouter);
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/hello', helloRouter);
