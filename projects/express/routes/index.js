@@ -11,6 +11,16 @@ const upper = async function* (res) {
   yield rawData.toUpperCase();
 }
 
+router.use((req, res, next) => {
+  const ips = ['::1', '127.0.0.1'];
+  if (ips.includes(req.socket.remoteAddress)) {
+    const err = new Error('Forbidden');
+    err.status = 403;
+    return next(err);
+  }
+  next();
+});
+
 /* GET home page. */
 router.get('/', (req, res, next) => {
   const { url } = req.query;
