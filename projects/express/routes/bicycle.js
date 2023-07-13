@@ -2,79 +2,146 @@
 const express = require('express');
 const router = express.Router();
 const bicycleModel = require('../models/bicycle');
-const { body, param, query, check, validationResult } = require('express-validator');
 
-router.get('/:id', param('id').notEmpty().isString(), query('tas').notEmpty().isNumeric().bail(), (req, res, next) => {
-    const result = validationResult(req);
-    console.log("🚀 ~ file: bicycle.js:9 ~ router.get ~ result:", result)
+const hasOwnProperty = (o, p) => Object.prototype.hasOwnProperty.call(o, p);
 
-    if (result.errors.length > 0) {
-        const arrErr = [];
-        for (i = 0; i < result.array().length; i++) {
-            const error = result.array()[i];
-            console.log("🚀 ~ file: bicycle.js:14 ~ router.get ~ result.errors:", result.array())
-            console.log("🚀 ~ file: bicycle.js:15 ~ router.get ~ error:", error)
-            arrErr.push({ variable: error.path, message: error.msg });
-        }
-        console.log("🚀 ~ file: bicycle.js:18 ~ router.get ~ arrErr:", arrErr);
-        return res.status(400).send(arrErr);
-    }
-    
-    bicycleModel.bicycle.read(req.params.id, (err, result) => {
-        if (err) {
-            if (err.message === 'not found') next();
-            else next(err);
-        } else {
-            res.send(result);
-        }
-    });
-});
+const validateData = (o) => {
+    let valid = o !== null && typeof o === 'object';
+    valid = valid && hasOwnProperty(o, 'brand');
+    valid = valid && hasOwnProperty(o, 'color');
+    valid = valid && typeof o.brand === 'string';
+    valid = valid && typeof o.color === 'string';
+    return valid && {
+        brand: o.brand,
+        color: o.color
+    };
+};
 
-router.post('/', (req, res, next) => {
-    var id = bicycleModel.bicycle.uid();
-    bicycleModel.bicycle.create(id, body(req.body.data).isObject(), (err) => {
-        if (err) next(err);
-        else res.status(201).send({ id });
-    });
-});
+const validateBody = (o) => {
+    let valid = o !== null && typeof o === 'object';
+    valid = valid && hasOwnProperty(o, 'data');
+    valid = valid && o.data !== null && typeof o.data === 'object';
+    const data = valid && validateData(o.data);
+    return valid && data && {
+        data: data
+    };
+};
 
-router.post('/:id/update', (req, res, next) => {
-    bicycleModel.bicycle.update(param(req.params.id).isObject(), req.body.data, (err) => {
-        if (err) {
-            if (err.message === 'not found') next();
-            else next(err);
-        } else {
-            res.status(204).send();
-        }
-    });
-});
+const isIdValid = (n) => {
+    n = Number(n);
+    const MAX_SAFE = Math.pow(2, 53) - 1;
+    return isFinite(n) && Math.floor(n) === n && Math.abs(n) <= MAX_SAFE;
+};
 
-router.put('/:id', (req, res, next) => {
-    bicycleModel.bicycle.create(req.params.id, req.body.data, (err) => {
-        if (err) {
-            if (err.message === 'resource exists') {
-                bicycleModel.bicycle.update(req.params.id, req.body.data, (err) => {
-                    if (err) next(err);
-                    else res.status(204).send();
-                });
+const isParamsValid = (o) => {
+    let valid = o !== null && typeof o === 'object';
+    valid = valid && hasOwnProperty(o, 'id');
+    valid = valid && isIdValid(o.id);
+    return valid;
+};
+
+const badRequest = () => {
+    const err = new Error('Bad Request');
+    err.status = 400;
+    return err;
+};
+
+router.get('/:id', function (req, res, next) {
+    if (isParamsValid(req.params)) {
+        bicycleModel.bicycle.read(req.params.id, (err, result) => {
+            if (err) {
+                if (err.message === 'not found') next();
+                else next(err);
             } else {
-                next(err);
+                const sanitizedResult = validateData(result);
+                if (sanitizedResult) {
+                    res.send(sanitizedResult);
+                } else {
+                    next(new Error('Server Error'));
+                }
             }
-        } else {
-            res.status(201).send({});
-        }
-    });
+        });
+    } else {
+        next(badRequest());
+    }
 });
 
-router.delete('/:id', (req, res, next) => {
-    bicycleModel.bicycle.del(req.params.id, (err) => {
-        if (err) {
-            if (err.message === 'not found') next();
-            else next(err);
+router.post('/', function (req, res, next) {
+    const id = bicycleModel.bicycle.uid();
+    const body = validateBody(req.body);
+    if (body) {
+        bicycleModel.bicycle.create(id, body.data, (err) => {
+            if (err) {
+                next(err);
+            } else {
+                if (isIdValid(id)) res.status(201).send({ id });
+                else next(new Error('Server Error'));
+            }
+        });
+    } else {
+        next(badRequest());
+    }
+});
+
+router.post('/:id/update', function (req, res, next) {
+    if (isParamsValid(req.params)) {
+        const body = validateBody(req.body);
+        if (body) {
+            bicycleModel.bicycle.update(req.params.id, body.data, (err) => {
+                if (err) {
+                    if (err.message === 'not found') next();
+                    else next(err);
+                } else {
+                    res.status(204).send();
+                }
+            });
         } else {
-            res.status(204).send();
+            next(badRequest());
         }
-    });
+    } else {
+        next(badRequest());
+    }
+});
+
+router.put('/:id', function (req, res, next) {
+    if (isParamsValid(req.params)) {
+        const body = validateBody(body);
+        if (body) {
+            bicycleModel.bicycle.create(req.params.id, body.data, (err) => {
+                if (err) {
+                    if (err.message === 'resource exists') {
+                        bicycleModel.bicycle.update(req.params.id, body.data, (err) => {
+                            if (err) next(err);
+                            else res.status(204).send();
+                        });
+                    } else {
+                        next(err);
+                    }
+                } else {
+                    res.status(201).send({});
+                }
+            });
+        } else {
+            next(badRequest());
+        }
+    } else {
+        next(badRequest());
+    }
+});
+
+router.delete('/:id', function (req, res, next) {
+    if (isParamsValid(req.params)) {
+        bicycleModel.bicycle.del(req.params.id, (err) => {
+            if (err) {
+                if (err.message === 'not found') next();
+                else next(err);
+            } else {
+                res.status(204).send();
+            }
+        });
+    } else {
+        next(badRequest());
+    }
 });
 
 module.exports = router;
