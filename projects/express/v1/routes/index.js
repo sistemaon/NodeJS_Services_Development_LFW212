@@ -18,7 +18,7 @@ router.use((req, res, next) => {
     err.status = 403;
     return next(err);
   }
-  next();
+  return next();
 });
 
 /* GET home page. */
