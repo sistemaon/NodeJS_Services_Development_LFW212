@@ -19,5 +19,13 @@
 > - Responds to GET '/lab-3-1' with data from file '3.1.data.js'\
 > - Responds 404 to GET to any other route from '/lab-3-1'
 
+>**files**: _routes/lab.3.2.js_, _3.2.validate.js_\
+>**route path**: _/lab-3-2_\
+>**run command**: _node 3.2.validate.js_\
+>
+>**Objective**:
+> - Responds to GET '/lab-3-2' with status '200' OK\
+> - Responds to POST with status '405' Method Not Allowed
+
 ---
 ---
