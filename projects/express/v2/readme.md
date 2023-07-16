@@ -28,4 +28,13 @@
 > - Responds to POST with status '405' Method Not Allowed
 
 ---
+
+# Serving Web Content
+
+>**files**: _routes/hello.js_, _views/helloWorldDummy01.hbs_, _views/layout.hbs_, _views/index.hbs_\
+>**route path**: _/hello_, _/hello??greeting=query\
+>**query**: _greeting_\
+>**example**: _/hello_ or _/hello?greeting=Sistemaon_
+
+---
 ---
