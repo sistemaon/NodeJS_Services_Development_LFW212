@@ -1,0 +1,26 @@
+<style>
+    a {
+        font-size: 12px;
+    }
+    .span {
+        color: goldenrod;
+        font-family: sans-serif;
+    }
+    .title {
+            font-size: 24px;
+    }
+    .author {
+            font-size: 18px;
+    }
+</style>
+
+<h1> {{ title }} </h1>
+<br>
+{{#each articles}}
+    <div>
+        TITLE: <span class="span title"> {{ title }} </span> <br>
+        AUTHOR: <span class="span author"> {{ by }} </span> <br>
+        SOURCE: <a href={{url}} target="_blank" rel="noopener noreferrer"> {{url}} </a> <br>
+    </div>
+    <br><br>
+{{/each}}
