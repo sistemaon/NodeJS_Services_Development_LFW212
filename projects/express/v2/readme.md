@@ -12,7 +12,8 @@
 >**routes available**: _/hello/static/root_, _/hello/static/hello_
 
 >**files**: _routes/lab.3.1.js_, _3.1.data.js_, _3.1.validate.js_\
->**route path**: _/lab-3-1_\
+>**route path**: _/lab-3-1_
+>
 >**run command**: _node 3.1.validate.js_
 >
 >**Objective**:
@@ -20,7 +21,8 @@
 > - Responds status '404' to GET to any other route from '/lab-3-1'
 
 >**files**: _routes/lab.3.2.js_, _3.2.validate.js_\
->**route path**: _/lab-3-2_\
+>**route path**: _/lab-3-2_
+>
 >**run command**: _node 3.2.validate.js_
 >
 >**Objective**:
@@ -35,6 +37,17 @@
 >**route path**: _/hello_, _/hello?greeting=query\
 >**query**: _greeting_\
 >**example**: _/hello_ or _/hello?greeting=Sistemaon_
+
+>**files**: _routes/articles.js_, _views/articles.hbs_\
+>**route path**: _/articles_, _/articles?amount=query&type=query, _/articles/me_\
+>**query**: _amount_, _type_\
+>**example**: _/articles?amount=10&type=html_ or _/articles/me_
+>
+>**run command**: _node 4.1.validate.js_
+>
+>**Objective**:
+> - Renders a view with stream content on route _/articles/me_ responding to GET with status '200' OK
+> - Reuses the default layout file _layout.hbs_ view to render
 
 ---
 ---
