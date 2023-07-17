@@ -49,5 +49,15 @@
 > - Renders a view with stream content on route _/articles/me_ responding to GET with status '200' OK
 > - Reuses the default layout file _layout.hbs_ view to render
 
+>**files**: _routes/articles.js_\
+>**route path**: _/articles/data_\
+>**example**: _/articles/data_
+>
+>**run command**: _node 4.2.validate.js_
+>
+>**Objective**:
+> - Respond with stream content on route _/articles/data_ to GET with status '200' OK
+> - Delay expected in response stream on route _/articles/data_
+
 ---
 ---
