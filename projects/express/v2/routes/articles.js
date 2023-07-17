@@ -3,6 +3,28 @@ const express = require('express');
 const router = express.Router();
 const hnLatestStream = require('hn-latest-stream');
 const finished = require('stream/promises').finished;
+const { Readable, Transform } = require('stream');
+
+const streamReadable = () => {
+    const readable = Readable.from(['this', 'is', 'a', 'stream', 'of', 'data'].map((s) => s + '<br>'));
+    const delay = new Transform(({
+        transform(chunk, enc, cb) {
+            setTimeout(cb, 500, null, chunk)
+        }
+    }))
+    return readable.pipe(delay)
+}
+
+router.get('/data', async (req, res, next) => {
+    const data = streamReadable();
+    data.pipe(res, { end: false });
+    try {
+        await finished(data);
+        return res.end();
+    } catch (error) {
+        return next(error);
+    }
+});
 
 router.get('/', async (req, res, next) => {
     const { amount = 10, type = 'html' } = req.query;
@@ -19,7 +41,6 @@ router.get('/', async (req, res, next) => {
     } catch (error) {
         return next(error);
     }
-
 });
 
 router.get('/me', async (req, res, next) => {
