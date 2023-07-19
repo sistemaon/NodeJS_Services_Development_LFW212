@@ -9,9 +9,11 @@ const indexRouter = require('./routes/index');
 const articlesRouter = require('./routes/articles');
 const helloRouter = require('./routes/hello');
 const usersRouter = require('./routes/users');
+const bicycleRouter = require('./routes/bicycle');
 
 const labRouter_3_1 = require('./routes/lab.3.1');
 const labRouter_3_2 = require('./routes/lab.3.2');
+// const labRouter_5_1 = require('./routes/lab.5.1');
 
 const app = express();
 
@@ -27,10 +29,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/articles', articlesRouter);
+app.use('/bicycle', bicycleRouter);
 app.use('/hello', helloRouter);
 app.use('/users', usersRouter);
 app.use('/lab-3-1', labRouter_3_1);
 app.use('/lab-3-2', labRouter_3_2);
+// app.use('/lab-5-1/boat', labRouter_5_1);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -45,7 +49,13 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.send({
+    type: 'error',
+    status: err.status,
+    message: err.message,
+    stack: req.app.get('env') === 'development' ? err.stack : undefined
+  });
+  // res.render('error');
 });
 
 module.exports = app;
