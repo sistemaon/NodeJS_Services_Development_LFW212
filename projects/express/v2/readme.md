@@ -7,7 +7,7 @@
 >**example**: _/hwdummy00?name=SistemaOn_
 
 >**files**: _routes/index.js_\
->**route path**: _/hello/static_\
+>**route path**: _/hello/static/:pathName_\
 >**params**: _pathName_\
 >**routes available**: _/hello/static/root_, _/hello/static/hello_
 
@@ -58,6 +58,36 @@
 >**Objective**:
 > - Respond with stream content on route _/articles/data_ to GET with status '200' OK
 > - Delay expected in response stream on route _/articles/data_
+
+---
+
+# Creating RESTful JSON Services
+
+>**files**: models/bicycle.js_, routes/bicycle.js_\
+>**route path**: _/bicycle/:id_\
+>**params**: _id_\
+>**example**: _/bicycle/1_
+
+<!-- >**files**: _routes/articles.js_, _views/articles.hbs_\
+>**route path**: _/articles_, _/articles?amount=query&type=query, _/articles/me_\
+>**query**: _amount_, _type_\
+>**example**: _/articles?amount=10&type=html_ or _/articles/me_
+>
+>**run command**: _node 4.1.validate.js_
+>
+>**Objective**:
+> - Renders a view with stream content on route _/articles/me_ responding to GET with status '200' OK
+> - Reuses the default layout file _layout.hbs_ view to render
+
+>**files**: _routes/articles.js_\
+>**route path**: _/articles/data_\
+>**example**: _/articles/data_
+>
+>**run command**: _node 4.2.validate.js_
+>
+>**Objective**:
+> - Respond with stream content on route _/articles/data_ to GET with status '200' OK
+> - Delay expected in response stream on route _/articles/data_ -->
 
 ---
 ---
