@@ -86,11 +86,27 @@
 
 # Manipulating Data with RESTful Services
 
->**files**: _models/bicycle.js_, routes/bicycle.js_\
+>**files**: _models/bicycle.js_, _routes/bicycle.js_\
 >**route path**: _/bicycle_, _/bicycle/:id_, _/bicycle/:id/update_\
 >**params**: _id_\
 >**body**: _brand_, _color_\
 >**example**: _/bicycle_, _/bicycle/1_, _/bicycle/1/update_
+
+>**files**: _models/lab.6.1_, _routes/lab.6.1.js_\
+>**route path**: _/lab-6-1/boat_, _/lab-6-1/boat/:id_\
+>**params**: _id_\
+>**body**: _brand_, _color_\
+>**example**: _/lab-6-1/boat_, _/lab-6-1/boat/1_
+>
+>**run command**: _node 6.1.validate.js_ and _node 6.2.validate.js_
+>
+>**Objective**:
+> - Correct header set content-type to application/json
+> - Respond to GET with status '404' NOT FOUND
+> - Respond to GET with status '200' OK
+> - Respond to POST with status '201' CREATED
+> - Respond to POST with status '500' INTERNAL SERVER ERROR for unexpected data
+> - Respond to DELETE with status '204' NO CONTENT
 
 ---
 ---
