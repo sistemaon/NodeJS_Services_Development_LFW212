@@ -83,4 +83,14 @@
 > - Respond to GET with status '400' BAD REQUEST or '404' NOT FOUND or '405' METHOD NOT ALLOWED to unsupported methods
 
 ---
+
+# Manipulating Data with RESTful Services
+
+>**files**: _models/bicycle.js_, routes/bicycle.js_\
+>**route path**: _/bicycle_, _/bicycle/:id_, _/bicycle/:id/update_\
+>**params**: _id_\
+>**body**: _brand_, _color_\
+>**example**: _/bicycle_, _/bicycle/1_, _/bicycle/1/update_
+
+---
 ---
