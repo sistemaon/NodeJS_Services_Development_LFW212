@@ -109,4 +109,27 @@
 > - Respond to DELETE with status '204' NO CONTENT
 
 ---
+
+# Consuming and Aggregating Services
+
+>**files**: _services/bicycle-services-00.js_, _services/brand-services-00.js_, _routes/root.js_\
+>**route path**: _/root/:id_\
+>**params**: _id_\
+>**example**: _/root/1_
+
+>**files**: _services/boat-services.7.1.js_, _services/brand-services.7.1.js_, _routes/aggregate.js_\
+>**route path**: _/aggregate/:id_\
+>**params**: _id_\
+>**example**: _/aggregate/1_
+>
+>**run command**: _node 7.1.validate.js_
+>
+>**Objective**:
+> - Correct header set content-type to application/json
+> - Respond to GET with status '400' BAD REQUEST
+> - Respond to GET with status '404' NOT FOUND
+> - Respond to GET with status '500' INTERNAL SERVER ERROR for unexpected data
+> - Respond to GET with status '200' OK
+
+---
 ---

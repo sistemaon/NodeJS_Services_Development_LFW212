@@ -11,6 +11,7 @@ const helloRouter = require('./routes/hello');
 const usersRouter = require('./routes/users');
 const bicycleRouter = require('./routes/bicycle');
 const rootRouter = require('./routes/root');
+const aggregateRouter = require('./routes/aggregate');
 
 const labRouter_3_1 = require('./routes/lab.3.1');
 const labRouter_3_2 = require('./routes/lab.3.2');
@@ -30,6 +31,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/aggregate', aggregateRouter);
 app.use('/articles', articlesRouter);
 app.use('/bicycle', bicycleRouter);
 app.use('/hello', helloRouter);
