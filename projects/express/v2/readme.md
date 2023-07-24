@@ -132,4 +132,18 @@
 > - Respond to GET with status '200' OK
 
 ---
+
+# Proxying HTTP Requests
+
+>**files**: _routes/index.js_\
+>**route path**: _/root/*_\
+>**query**: _token_\
+>**example**: _/root/?token=123_
+
+>**files**: _routes/index.js_\
+>**route path**: _/_\
+>**query**: _url_\
+>**example**: _/root/?url=http://localhost:5055_
+
+---
 ---
