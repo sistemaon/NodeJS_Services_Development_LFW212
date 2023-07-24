@@ -2,13 +2,49 @@
 const express = require('express');
 const router = express.Router();
 const { URL } = require('url');
+const { createProxyMiddleware } = require('http-proxy-middleware');
+const { Readable } = require('stream');
+const createError = require('http-errors');
 
-/* GET home page. */
-router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Express' });
+const upper = async function* (res) {
+  for await (const chunk of res) {
+    yield chunk.toString().toUpperCase()
+  }
+};
+
+const tokenVerificationMiddleware = (req, res, next) => {
+  const token = req.query.token;
+  if (!token) {
+    return next(createError(401));
+  }
+  return next();
+};
+const apiProxy = createProxyMiddleware({
+  target: 'https://news.ycombinator.com',
+  changeOrigin: true,
+  pathRewrite: (path, req) => path.replace('/root', '/')
+});
+router.get('/root/*', tokenVerificationMiddleware, apiProxy);
+
+const customProxyMiddleware = (req, res, next) => {
+  const { url } = req.query;
+  if (!url) {
+    return next(createError(400));
+  }
+  const proxy = createProxyMiddleware({
+    target: url,
+    selfHandleResponse: true,
+    pathRewrite: (path, req) => path.replace('/', '/root'),
+    onProxyRes: (proxyRes, req, res) => Readable.from(upper(proxyRes)).pipe(res)
+  });
+  return proxy(req, res, next);
+};
+router.get('/', customProxyMiddleware);
+
+router.get('/index', function (req, res, next) {
+  return res.render('index', { title: 'Express' });
 });
 
-/* GET home page. */
 router.get('/hwdummy00', function (req, res, next) {
   const { name } = req.query;
   if (!name) {
@@ -16,7 +52,6 @@ router.get('/hwdummy00', function (req, res, next) {
   }
   return res.render('helloWorldDummy00', { name: name });
 });
-
 
 router.get('/hello/static/:pathName', (req, res, next) => {
   res.setHeader('Content-Type', 'text/html');
@@ -72,6 +107,5 @@ router.get('/hello/static/:pathName', (req, res, next) => {
 
   return res.status(404).send('Not Found!');
 });
-
 
 module.exports = router;
