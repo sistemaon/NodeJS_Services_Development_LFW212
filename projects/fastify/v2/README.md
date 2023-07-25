@@ -45,4 +45,14 @@ To learn Fastify, check out the [Fastify documentation](https://www.fastify.io/d
 > - Respond to GET with status '404' NOT FOUND
 
 ---
+
+# Web Security: Handling User Input
+
+>**files**: _routes/bicycle.js_, _bicycle.js_\
+>**route path**: _/bicycle_, _/bicycle/:id/update_, _/bicycle/:id_\
+>**query**: _id_\
+>**body**: _brand_, _color_\
+>**example**: _/bicycle/2/update_
+
+---
 ---
