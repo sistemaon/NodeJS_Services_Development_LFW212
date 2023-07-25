@@ -50,7 +50,7 @@ To learn Fastify, check out the [Fastify documentation](https://www.fastify.io/d
 
 >**files**: _routes/bicycle.js_, _bicycle.js_\
 >**route path**: _/bicycle_, _/bicycle/:id/update_, _/bicycle/:id_\
->**query**: _id_\
+>**params**: _id_\
 >**body**: _brand_, _color_\
 >**example**: _/bicycle/2/update_
 
@@ -64,7 +64,20 @@ To learn Fastify, check out the [Fastify documentation](https://www.fastify.io/d
 >**Objective**:
 > - Respond to GET with status '200' OK
 > - Respond to GET after 1 second wait
-> - Respond to GET without server chrash
+> - Respond to GET without server crash
+
+>**files**: _routes/boat/index.js_, _boatModel.js_\
+>**route path**: _/boat_\
+>**params**: _id_\
+>**example**: _/boat/1_
+>
+>**run command**: _node 9.2.validate.js_
+>
+>**Objective**:
+> - Respond to GET with status '200' OK
+> - Respond to GET with status '201' CREATED
+> - Respond to GET with status '404' NOT FOUND
+> - Respond to GET with status '500' INTERNAL SERVER ERROR
 
 ---
 ---
