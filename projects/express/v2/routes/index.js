@@ -3,8 +3,11 @@ const express = require('express');
 const router = express.Router();
 const { URL } = require('url');
 const { createProxyMiddleware } = require('http-proxy-middleware');
-const { Readable } = require('stream');
 const createError = require('http-errors');
+
+router.get('/', (req, res, next) => {
+  return res.status(200).send('ExpressJS');
+});
 
 const tokenVerificationMiddleware = (req, res, next) => {
   const token = req.query.token;

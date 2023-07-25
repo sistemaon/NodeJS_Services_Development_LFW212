@@ -144,7 +144,7 @@
 
 # Web Security: Handling User Input
 
->**files**: _routes/_pollution.js_\
+>**files**: _routes/pollution.js_\
 >**route path**: _/pollution_\
 >**query**: _un_\
 >**example**: _/pollution?un=abc&un=def_
@@ -155,6 +155,20 @@
 > - Respond to GET with status '200' OK
 > - Respond to GET after 1 second wait
 > - Respond to GET without server crash
+
+---
+
+# Web Security: Mitigating Attacks
+
+>**files**: _app.js_\
+>**route path**: _/_\
+>**example**: _/_
+>
+>**run command**: _node 10.1.validate.js_
+>
+>**Objective**:
+> - Respond to GET with status '200' OK
+> - Respond to GET with status '403' FORBIDDEN
 
 ---
 ---

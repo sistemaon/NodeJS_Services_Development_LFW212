@@ -31,6 +31,17 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use((req, res, next) => {
+  const ips = ['111.34.55.211'];
+  const ip = req.socket.remoteAddress;
+  if (ips.includes(ip)) {
+    const err = new Error('Forbidden');
+    err.status = 403;
+    return next(err);
+  } else {
+    return next();
+  }
+});
 app.use('/', indexRouter);
 app.use('/aggregate', aggregateRouter);
 app.use('/articles', articlesRouter);
