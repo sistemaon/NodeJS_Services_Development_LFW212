@@ -6,12 +6,6 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 const { Readable } = require('stream');
 const createError = require('http-errors');
 
-const upper = async function* (res) {
-  for await (const chunk of res) {
-    yield chunk.toString().toUpperCase()
-  }
-};
-
 const tokenVerificationMiddleware = (req, res, next) => {
   const token = req.query.token;
   if (!token) {
@@ -25,21 +19,6 @@ const apiProxy = createProxyMiddleware({
   pathRewrite: (path, req) => path.replace('/root', '/')
 });
 router.get('/root/*', tokenVerificationMiddleware, apiProxy);
-
-const customProxyMiddleware = (req, res, next) => {
-  const { url } = req.query;
-  if (!url) {
-    return next(createError(400));
-  }
-  const proxy = createProxyMiddleware({
-    target: url,
-    selfHandleResponse: true,
-    pathRewrite: (path, req) => path.replace('/', '/root'),
-    onProxyRes: (proxyRes, req, res) => Readable.from(upper(proxyRes)).pipe(res)
-  });
-  return proxy(req, res, next);
-};
-router.get('/', customProxyMiddleware);
 
 router.get('/index', function (req, res, next) {
   return res.render('index', { title: 'Express' });
