@@ -154,7 +154,7 @@
 >**Objective**:
 > - Respond to GET with status '200' OK
 > - Respond to GET after 1 second wait
-> - Respond to GET without server chrash
+> - Respond to GET without server crash
 
 ---
 ---
