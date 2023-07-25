@@ -54,5 +54,17 @@ To learn Fastify, check out the [Fastify documentation](https://www.fastify.io/d
 >**body**: _brand_, _color_\
 >**example**: _/bicycle/2/update_
 
+>**files**: _pollution/index.js_\
+>**route path**: _/pollution_\
+>**query**: _un_\
+>**example**: _/pollution?un=abc&un=def_
+>
+>**run command**: _node 9.1.validate.js_
+>
+>**Objective**:
+> - Respond to GET with status '200' OK
+> - Respond to GET after 1 second wait
+> - Respond to GET without server chrash
+
 ---
 ---
