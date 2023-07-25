@@ -141,4 +141,20 @@
 >**example**: _/root/?token=123_
 
 ---
+
+# Web Security: Handling User Input
+
+>**files**: _routes/_pollution.js_\
+>**route path**: _/pollution_\
+>**query**: _un_\
+>**example**: _/pollution?un=abc&un=def_
+>
+>**run command**: _node 9.1.validate.js_
+>
+>**Objective**:
+> - Respond to GET with status '200' OK
+> - Respond to GET after 1 second wait
+> - Respond to GET without server chrash
+
+---
 ---

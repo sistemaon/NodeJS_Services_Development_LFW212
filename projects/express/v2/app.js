@@ -12,6 +12,7 @@ const usersRouter = require('./routes/users');
 const bicycleRouter = require('./routes/bicycle');
 const rootRouter = require('./routes/root');
 const aggregateRouter = require('./routes/aggregate');
+const pollutionRouter = require('./routes/pollution');
 
 const labRouter_3_1 = require('./routes/lab.3.1');
 const labRouter_3_2 = require('./routes/lab.3.2');
@@ -37,6 +38,7 @@ app.use('/bicycle', bicycleRouter);
 app.use('/hello', helloRouter);
 app.use('/root', rootRouter);
 app.use('/users', usersRouter);
+app.use('/pollution', pollutionRouter);
 app.use('/lab-3-1', labRouter_3_1);
 app.use('/lab-3-2', labRouter_3_2);
 app.use('/lab-5-1/boat', labRouter_5_1);
