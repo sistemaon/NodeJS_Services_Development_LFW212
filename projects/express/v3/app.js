@@ -6,7 +6,7 @@ const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-
+const helloRouter = require('./routes/hello');
 const l31Router = require('./l.3.1/index');
 const l32Router = require('./l.3.2/index');
 
@@ -24,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/greet', helloRouter);
 
 app.use('/l-3-1', l31Router);
 app.use('/l-3-2', l32Router);
