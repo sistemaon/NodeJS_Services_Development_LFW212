@@ -16,7 +16,6 @@ router.get('/:id', (req, res, next) => {
 });
 
 router.post('/', (req, res, next) => {
-    res.type('json');
     res.setHeader('Content-Type', 'application/json');
     try {
         const id = model.boat.uid();
