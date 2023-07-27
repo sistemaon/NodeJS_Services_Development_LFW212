@@ -11,6 +11,7 @@ const hnStream = require('./routes/hn-stream');
 const l31Router = require('./l.3.1/index');
 const l32Router = require('./l.3.2/index');
 const l41Router = require('./l.4.1/index');
+const l42Router = require('./l.4.2/index');
 
 const app = express();
 
@@ -32,6 +33,7 @@ app.use('/articles', hnStream);
 app.use('/l-3-1', l31Router);
 app.use('/l-3-2', l32Router);
 app.use('/me', l41Router);
+app.use('/data', l42Router);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
