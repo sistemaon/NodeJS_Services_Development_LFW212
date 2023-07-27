@@ -7,11 +7,13 @@ const logger = require('morgan');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const helloRouter = require('./routes/hello');
-const hnStream = require('./routes/hn-stream');
+const hnStreamRouter = require('./routes/hn-stream');
+const bikeRouter = require('./routes/bike');
 const l31Router = require('./l.3.1/index');
 const l32Router = require('./l.3.2/index');
 const l41Router = require('./l.4.1/index');
 const l42Router = require('./l.4.2/index');
+const l51Router = require('./l.5.1/index');
 
 const app = express();
 
@@ -28,12 +30,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/greet', helloRouter);
-app.use('/articles', hnStream);
+app.use('/articles', hnStreamRouter);
+app.use('/bicycle', bikeRouter);
 
 app.use('/l-3-1', l31Router);
 app.use('/l-3-2', l32Router);
 app.use('/me', l41Router);
 app.use('/data', l42Router);
+app.use('/boat', l51Router);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -43,6 +47,7 @@ app.use(function(req, res, next) {
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
+  res.type('text/html');
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
