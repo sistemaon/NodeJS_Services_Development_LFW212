@@ -5,7 +5,7 @@ module.exports = async function (fastify, opts) {
             try {
                 const { un } = request.query
                 if (!un) {
-                    throw notFound()
+                    throw fastify.httpErrors.notFound()
                 }
                 if (Array.isArray(un)) {
                     const singleUn = un[0];

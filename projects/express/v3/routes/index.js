@@ -1,5 +1,15 @@
 const express = require('express');
 const router = express.Router();
+const createError = require('http-errors');
+
+router.use((req, res, next) => {
+  const ips = [ '111.34.55.211' ];
+  const ip = req.socket.remoteAddress;
+  if (ips.includes(ip)) {
+    return next(createError(403));
+  }
+  return next();
+});
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
